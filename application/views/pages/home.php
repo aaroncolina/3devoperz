@@ -3,9 +3,9 @@
         <div class="carousel-inner">
         <?php $i = 0; ?>
         <?php foreach ($events as $key => $event): ?>
-            <div class="carousel-item <?php echo ($i == 0)?'active':''; ?>">
+            <a href="<?php echo site_url('home/registration/'.$key); ?>" class="carousel-item <?php echo ($i == 0)?'active':''; ?>">
                 <img class="d-block w-100" src="<?php echo $event['img']; ?>" alt="<?php echo $event['title']; ?>">
-            </div>
+            </a>
         <?php $i++; ?>
         <?php endforeach; ?>
         </div>
